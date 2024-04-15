@@ -72,9 +72,10 @@ allKanjiJuniorHighSchool = \
  '療', '瞭', '糧', '厘', '倫', '隣', '瑠', '涙', '累', '塁', '励', '戻', '鈴', '零', '霊', '隷',
  '齢', '麗', '暦', '劣', '烈', '裂', '恋', '廉', '錬', '呂', '炉', '賂', '露', '弄', '郎', '浪',
  '廊', '楼', '漏', '籠', '麓', '賄', '脇', '惑', '枠', '湾', '腕']
-pprint.pprint(random.sample(allKanjiJuniorHighSchool, 50),compact=True)
+listofRandomkanji = random.sample(allKanjiJuniorHighSchool, 50)
+pprint.pprint(listofRandomkanji,compact=True)
 k = 49
-for i in random.sample(allKanjiJuniorHighSchool, 50):
+for i in listofRandomkanji:
     print('"'+str(i)+'"'+"を書いてください　"+"残り"+str(k))
     input()
     k = k - 1
